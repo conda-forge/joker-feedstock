@@ -1,0 +1,36 @@
+schema_version: 1
+
+context:
+  version: 1.5.2
+
+package:
+  name: joker
+  version: ${{ version }}
+
+source:
+  url: https://github.com/candid82/joker/archive/v${{ version }}.tar.gz
+  sha256: 6a3fe0fe8bb181d790823e408c855168e85cce4f9cae3d7a1985a156cbf5a230
+
+build:
+  number: 0
+
+requirements:
+  build:
+    - ${{ compiler('go-nocgo') }}
+    - go-licenses
+
+tests:
+  - script:
+      - joker --help
+
+about:
+  license: EPL-1.0
+  license_file:
+    - LICENSE
+  summary: Small Clojure interpreter, linter and formatter.
+  homepage: https://github.com/candid82/joker
+  repository: https://github.com/candid82/joker
+
+extra:
+  recipe-maintainers:
+    - danielnachun
