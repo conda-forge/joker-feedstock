@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: "1.6.0"
+  version: "1.7.1"
 
 package:
   name: joker
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://github.com/candid82/joker/archive/v${{ version }}.tar.gz
-  sha256: f7d48c503feed4ee8e2680febad07ba0cdbb7dae5886e119261163c27cf28899
+  sha256: 4584505068bb63601bae8e1eef555e08a7ed01117d25fae2e87a1a101c439b99
 
 build:
   number: 0
